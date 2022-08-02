@@ -7,7 +7,8 @@ img = cv2.imread("./face data set/inddex.jpeg")
 # grayscaling img
 imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # blure img
-imgBlur = cv2.GaussianBlur(img, (1,251), 0)
+# imgBlur = cv2.GaussianBlur(img, (5,5), 0)
+imgBlur = cv2.blur(img,(50,5))
 # just show edges
 imgCanny = cv2.Canny(img,200,200)
 

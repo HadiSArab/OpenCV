@@ -1,8 +1,15 @@
-import numpy as np
+
 import cv2
 
-ali = np.zeros((680,680,3),np.uint8)
-ali[:] = 150,100,255
-print(ali.shape)
-cv2.imshow("pic",ali)
-cv2.waitKey(0)
+# image = cv2.imread("./face data set/images.jpeg")
+# image1 = cv2.blur(image,(30,30))
+# cv2.imshow("salam",image1)
+# cv2.waitKey(0)
+# cv2.imwrite('/home/python/project/alisdfsdf.jpg', image1)
+
+ali = "man,khodam,keyli,khoobam"
+ali = ali.split(',')
+if 'man' in ali:
+    print("hey")
+
+print(type(str(ali[0])+str(ali[1])+".lsdkf"))

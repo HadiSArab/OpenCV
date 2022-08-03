@@ -39,4 +39,6 @@ def image_api():
         imgGray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         cv2.imwrite('/home/python/PycharmProjects/OpenCV/image editor/images/'+str(name[0])+'Gray.'+str(name[1]), imgGray)
 
+
+
     return "done"

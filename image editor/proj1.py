@@ -1,12 +1,6 @@
-from crypt import methods
-from cv2 import split
 import cv2
-import numpy as np
-import requests
 from flask import Flask, request, redirect, url_for
 from flask import render_template
-import json
-from datetime import datetime
 
 # http://localhost:5000/image_api?name=images.jpeg&edit=blur,graystyle,resize 
 

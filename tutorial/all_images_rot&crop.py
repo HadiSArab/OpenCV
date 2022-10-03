@@ -10,7 +10,7 @@ for filename in glob.glob('D:\ehsaniran\source\*.jpg'):
     nam = na.split('.')
     name = str(nam[0])
 
-    y,x,ht = img.shape
+    y,x,ht = img.shape   
     xcrop = int(x/2)
     ycrop = int(y/2)
     matrix180 = cv2.getRotationMatrix2D((x/2,y/2),180,1)

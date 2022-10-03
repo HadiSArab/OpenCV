@@ -9,7 +9,7 @@ print(img.shape)
 
 # define channels colors, "img[:] = " meanes all subs of array get new value
 # also we can select an area from image to change color with "img[100:200,150,450]" : from line 100 to 200 and from column 150 to 450
-img[100:450,130:250] = 125,125,125
+img[50:450,130:250] = 125,125,125
 
 # "imshow" undrestand array and convert it to visible image
 cv2.imshow("img",img)
